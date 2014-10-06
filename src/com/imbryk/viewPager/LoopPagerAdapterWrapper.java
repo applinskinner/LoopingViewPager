@@ -78,7 +78,7 @@ public class LoopPagerAdapterWrapper extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return mAdapter.getCount() + 2;
+        return mAdapter.getCount() > 0 ? mAdapter.getCount() + 2 : 0;
     }
 
     public int getRealCount() {
