@@ -44,6 +44,11 @@ public class LoopPagerAdapterWrapper extends PagerAdapter {
 
     LoopPagerAdapterWrapper(PagerAdapter adapter) {
         this.mAdapter = adapter;
+        adapter.registerDataSetObserver(new DataSetObserver(){
+            public void onChanged(){
+                notifyDataSetChanged();
+            }
+        });
     }
 
     @Override
