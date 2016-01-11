@@ -16,6 +16,7 @@
 
 package com.imbryk.viewPager;
 
+import android.database.DataSetObserver;
 import android.os.Parcelable;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
